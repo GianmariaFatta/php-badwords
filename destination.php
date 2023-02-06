@@ -1,6 +1,8 @@
 <?php
 $paragraph = $_GET['paragraph'];
+$paragraph = strtolower($paragraph);
 $bad_word = $_GET['bad_word'];
+$bad_word = strtolower($bad_word);
 $good_paragraph = str_replace($bad_word,"***",$paragraph);
 ?>
 
