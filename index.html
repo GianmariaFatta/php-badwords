@@ -10,18 +10,17 @@
     <title>php-badwords</title>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- STYLE -->
-    <link rel="stylesheet" href="css/style..css">
-    <!-- JS -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script defer src="js/script.js" ></script>
 </head>
 <body>
-    <div class="container">
-   <form class="w-50 " action="destination.php" method="get">
-    <input class="w-50" type="text" name="paragraph" placeholder="scrivi qualcosa">
-    <button type="submit" class="btn btn-success" > Invia</button>
+    <div class="container p-5">
+        <div class="p-5 row d-flex align-items-center text-center">
+            <h1>PHP <span class="text-danger"><b>BAD</b></span>-Words</h1>
+   <form class=" mt-5 w-100 d-flex flex-column align-items-center " action="destination.php" method="get" >
+    <input class="w-50  " type="text" name="paragraph" placeholder="scrivi qualcosa" >
+    <input class="w-50  " type="text" name="bad_word" placeholder="inserisci la parola non concessa" >
+    <button type="submit" class="btn btn-danger mt-2" > Invia</button>
    </form>
+</div>
 </div>
 </body>
 </html>
